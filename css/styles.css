@@ -1,0 +1,74 @@
+:root {
+  --acent-color: #a3c1ef;
+  --text-color: #153461;
+  --acent-text_color: #fbb400;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  width: 1920px;
+  margin: 0 auto;
+
+  align-items: flex-end;
+
+  border: 1px solid tomato;
+  outline: tomato;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-accent {
+  color: var(--acent-text_color);
+}
+/* ----------------------  Header  ----------------------  */
+
+.header {
+  padding-left: 170px;
+  padding-right: 188px;
+}
+
+.header .list {
+  display: flex;
+  margin-left: 110px;
+}
+
+.menu a {
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 67px;
+  padding-bottom: 8px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: var(--acent-color);
+}
+.menu .item:not(:last-child) {
+  display: block;
+  margin-right: 48px;
+}
+
+.user-menu {
+  display: flex;
+  margin-left: auto;
+}
