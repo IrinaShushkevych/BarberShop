@@ -19,21 +19,24 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <img
+        <div class="logo-container">
+          <!-- <img
             class="logo"
             src="./image/scissors.svg"
             alt="Logo"
             width="74px"
             height="74px"
-          />
-          <img
+          /> -->
+          <p class="logo-text">
+            arber
+          </p>
+          <!-- <img
             class="logo-text"
             src="./image/Logo.svg"
             alt="Logo"
             width="91"
             height="53"
-          />
+          /> -->
         </div>
         <nav>
           <ul class="menu list">
@@ -44,17 +47,33 @@
           </ul>
         </nav>
         <ul class="user-menu list">
-          <li>
-            <button type="button">
-              <img src="./image/Profile.svg" alt="Profile" />
+          <li class="item">
+            <button type="button" class="user-button">
+              <img
+                src="./image/Profile.svg"
+                alt="Profile"
+                <!--
+                width="42"
+                height="42"
+                --
+              />
             </button>
           </li>
-          <li>
-            <button type="button">
-              <img src="./image/Notification.svg" alt="Notification" />
+          <li class="item">
+            <button type="button" class="user-button">
+              <img
+                src="./image/Notification.svg"
+                alt="Notification"
+                <!--
+                width="42"
+                height="42"
+                --
+              />
             </button>
           </li>
-          <li><button type="button">Appointment</button></li>
+          <li class="item">
+            <button type="button" class="appointment">Appointment</button>
+          </li>
         </ul>
       </div>
     </header>
@@ -62,8 +81,8 @@
     <main>
       <section>
         <div class="container" id="home">
-          <div>
-            <h2>
+          <div class="home-content">
+            <h2 class="title">
               <span class="text-accent">Hairstyle</span> Reflects The
               Personality Inside You
             </h2>
@@ -71,15 +90,22 @@
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at.
             </p>
-            <button type="button">Get Started</button>
+            <button type="button" class="buttons">Get Started</button>
           </div>
           <img src="./image/group_one.jpg" alt="" />
         </div>
       </section>
       <section>
         <div class="container" id="history">
-          <div>
-            <h2>Our <span class="text-accent">History</span></h2>
+          <img
+            src="./image/group_two.jpg"
+            alt="salon foto"
+            width="1234"
+            height=""
+            821
+          />
+          <div class="history-content">
+            <h2 class="title">Our <span class="text-accent">History</span></h2>
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at.
@@ -88,62 +114,68 @@
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at.
             </p>
-            <button type="button">Learn more</button>
+            <button type="button" class="buttons">Learn more</button>
           </div>
-          <img src="./image/group_two.jpg" alt="" />
         </div>
       </section>
       <section>
         <div class="container" id="service">
-          <h2>Services We <span class="text-accent">Provide</span></h2>
-          <ul class="list">
-            <li>
+          <h2 class="title">
+            Services We <span class="text-accent">Provide</span>
+          </h2>
+          <ul class="service-list list">
+            <li class="item">
               <img
                 src="./image/scissors.svg"
                 alt="scissors"
                 width="104"
                 height="126"
               />
-              <h3>Hair Cut</h3>
-              <p>
-                long established fact that a re acted by the readable content of
-                hen looking at.
-              </p>
+              <div>
+                <h3 class="title-card">Hair Cut</h3>
+                <p>
+                  long established fact that a reacted by the readable content
+                  of hen looking at.
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./image/electric-razor.svg"
                 alt="electric-razor"
                 width="104"
                 height="126"
               />
+              <div>
+                <h3 class="title-card">Beard Cut</h3>
+                <p>
+                  long established fact that a reacted by the readable content
+                  of hen looking at.
+                </p>
+              </div>
             </li>
-
-            <h3>Beard Cut</h3>
-            <p>
-              long established fact that a re acted by the readable content of
-              hen looking at.
-            </p>
-            <li>
+            <li class="item">
               <img
                 src="./image/cleanser.svg"
                 alt="cleanser"
                 width="104"
                 height="126"
               />
+              <div>
+                <h3 class="title-card">Facial Pack</h3>
+                <p>
+                  long established fact that a reacted by the readable content
+                  of hen looking at.
+                </p>
+              </div>
             </li>
-            <h3>Facial Pack</h3>
-            <p>
-              long established fact that a re acted by the readable content of
-              hen looking at.
-            </p>
           </ul>
         </div>
       </section>
       <section>
         <div class="container" id="gallery">
-          <h2>Our <span class="text-accent">Gallery</span></h2>
-          <ul class="list">
+          <h2 class="title">Our <span class="text-accent">Gallery</span></h2>
+          <ul class="photo-list list">
             <li>
               <img
                 src="./image/handsome-man-barbershop-shaving-beard_1303-26257.jpg"
@@ -193,31 +225,41 @@
               />
             </li>
           </ul>
-          <button type="button">View All</button>
+          <button type="button" class="buttons">View All</button>
         </div>
       </section>
-      ner
     </main>
     <footer class="footer">
-      <div class="logo">
-        <img
-          class="logo"
-          src="./image/scissors.svg"
-          alt="Logo"
-          width="74px"
-          height="74px"
-        />
-        <img class="logo-text" src="./image/Logo.svg" alt="Logo" />
+      <div class="container">
+        <div class="logo-container">
+          <!-- <img
+            class="logo"
+            src="./image/scissors.svg"
+            alt="Logo"
+            width="74px"
+            height="74px"
+          /> -->
+          <p class="logo-text">
+            arber
+          </p>
+          <!-- <img
+            class="logo-text"
+            src="./image/Logo.svg"
+            alt="Logo"
+            width="91"
+            height="53"
+          /> -->
+        </div>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable
+        </p>
+        <ul class="social list">
+          <li class="item">Facebook</li>
+          <li class="item">Twitter</li>
+          <li class="item">Google</li>
+        </ul>
       </div>
-      <p>
-        It is a long established fact that a reader will be distracted by the
-        readable
-      </p>
-      <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Google</li>
-      </ul>
     </footer>
   </body>
 </html>
