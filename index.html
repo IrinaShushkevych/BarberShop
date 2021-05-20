@@ -120,12 +120,11 @@
           </h2>
           <ul class="service-list list">
             <li class="item">
-              <img
-                src="./image/scissors.svg"
-                alt="scissors"
-                width="104"
-                height="126"
-              />
+              <div class="card">
+                <svg class="card-icon" width="60" height="70">
+                  <use href="./image/icons.svg#icon-razor"></use>
+                </svg>
+              </div>
               <div>
                 <h3 class="title-card">Hair Cut</h3>
                 <p>
@@ -135,12 +134,11 @@
               </div>
             </li>
             <li class="item">
-              <img
-                src="./image/electric-razor.svg"
-                alt="electric-razor"
-                width="104"
-                height="126"
-              />
+              <div class="card">
+                <svg class="card-icon" width="120" height="120">
+                  <use href="./image/icons.svg#icon-electric-razor"></use>
+                </svg>
+              </div>
               <div>
                 <h3 class="title-card">Beard Cut</h3>
                 <p>
@@ -150,12 +148,11 @@
               </div>
             </li>
             <li class="item">
-              <img
-                src="./image/cleanser.svg"
-                alt="cleanser"
-                width="104"
-                height="126"
-              />
+              <div class="card">
+                <svg class="card-icon" width="66" height="66">
+                  <use href="./image/icons.svg#icon-cleanser"></use>
+                </svg>
+              </div>
               <div>
                 <h3 class="title-card">Facial Pack</h3>
                 <p>
@@ -175,7 +172,8 @@
           <div class="bg-block bg-br"></div> -->
           <h2 class="title">Our <span class="text-accent">Gallery</span></h2>
           <ul class="photo-list list">
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/handsome-man-barbershop-shaving-beard_1303-26257.jpg"
                 alt=""
@@ -183,7 +181,8 @@
                 height="434"
               />
             </li>
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/handsome-man-barbershop-shaving-beard_1303-26258.jpg"
                 alt=""
@@ -191,7 +190,8 @@
                 height="434"
               />
             </li>
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/handsome-man-barbershop-shaving-beard_1303-26259.jpg"
                 alt=""
@@ -199,7 +199,8 @@
                 height="434"
               />
             </li>
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/handsome-man-shaving-beard-barbershop_1303-26261.jpg"
                 alt=""
@@ -207,7 +208,8 @@
                 height="434"
               />
             </li>
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/young-man-barbershop-trimming-hair_1303-26253.jpg"
                 alt=""
@@ -215,14 +217,15 @@
                 height="434"
               />
             </li>
-            <li>
+            <li class="photo-item">
+              <div class="photo-bg"></div>
               <img
                 src="./image/young-man-barbershop-trimming-hair_1303-26256.jpg"
                 alt=""
                 width="434"
                 height="434"
               />
-            </li>
+            </li class="photo-item">
           </ul>
           <button type="button" class="buttons">View All</button>
         </div>
@@ -232,20 +235,40 @@
       <div class="container pos-rel">
         <div class="bg-block bg-bl"></div>
         <div class="bg-block bg-br"></div>
-        <div class="logo-container">
-          <p class="logo-text">
-            arber
+        <div class="footer-border">
+          <div class="logo-container">
+            <p class="logo-text">
+              arber
+            </p>
+          </div>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable
           </p>
+          <ul class="social list">
+            <li class="item">
+              <div class="social-icon">
+                <svg class="icons" width="35" height="50">
+                  <use href="./image/icons.svg#icon-facebook"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item">
+              <div class="social-icon">
+                <svg class="icons" width="35" height="50">
+                  <use href="./image/icons.svg#icon-tweeter"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="item">
+              <div class="social-icon">
+                <svg class="icons" width="35" height="50">
+                  <use href="./image/icons.svg#icon-google"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
         </div>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable
-        </p>
-        <ul class="social list">
-          <li class="item">Facebook</li>
-          <li class="item">Twitter</li>
-          <li class="item">Google</li>
-        </ul>
       </div>
     </footer>
   </body>
