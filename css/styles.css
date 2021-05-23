@@ -83,44 +83,13 @@ img {
   overflow: hidden;
 }
 
-.bg-block {
-  position: absolute;
-  width: 433px;
-  height: 736px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-tl {
-  top: 0;
-  left: -150px;
-  background-image: url(../image/top-left.svg);
-}
-
-.bg-tr {
-  top: 0;
-  right: -123px;
-  background-image: url(../image/top-right.svg);
-}
-
-.bg-bl {
-  bottom: -137px;
-  left: -150px;
-  background-image: url(../image/bottom-left.svg);
-}
-
-.bg-br {
-  bottom: -157px;
-  right: -127px;
-  background-image: url(../image/bottom-right.svg);
-}
 /* ----------------------  Header  ----------------------  */
 
 .header .container {
   display: flex;
   padding-left: 170px;
   padding-right: 213px;
+  padding-bottom: 32px;
   align-items: center;
 }
 
@@ -215,36 +184,43 @@ img {
 
 #home {
   display: flex;
-  padding-left: 170px;
+  padding-top: 82px;
+  padding-left: 188px;
   padding-right: 0;
-  padding-bottom: 0px;
-}
-
-.home-content {
-  padding-bottom: 138px;
-  padding-top: 162px;
-  padding-right: 24px;
+  padding-bottom: 153px;
+  padding-right: 1156px;
+  background-image: url(../image/bg-home.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
 }
 
 .home-content .title {
   margin-bottom: 29px;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 1.336;
+  letter-spacing: 0;
 }
+
 .home-content p {
+  margin-top: 0;
   margin-bottom: 97px;
+  font-size: 25px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
 }
 /* ----------------------  History  ----------------------  */
 
 #history {
   display: flex;
   padding-right: 195px;
-  padding-left: 0;
-  padding-top: 226px;
-}
-
-.history-content {
-  padding-bottom: 138px;
-  padding-top: 162px;
-  padding-left: 149px;
+  padding-left: 1199px;
+  padding-top: 337px;
+  padding-bottom: 240px;
+  background-image: url(../image/top-left.svg), url(../image/top-right.svg),
+    url(../image/bg-history.svg);
+  background-repeat: no-repeat;
+  background-position: -1% -20%, 100% -20%, 70px 100%;
 }
 
 .history-content .title {
@@ -260,8 +236,12 @@ img {
 /* ----------------------  Service  ----------------------  */
 #service {
   text-align: center;
-  padding-top: 136px;
-  padding-bottom: 272px;
+  padding-top: 110px;
+  padding-bottom: 239px;
+  background-image: url(../image/bottom-right.svg),
+    url(../image/bottom-left.svg);
+  background-repeat: no-repeat;
+  background-position: 110% 150%, -10% 150%;
 }
 
 .service-list {
@@ -347,6 +327,10 @@ img {
   padding-left: 270px;
   padding-right: 270px;
   text-align: center;
+
+  background-image: url(../image/top-left.svg), url(../image/top-right.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -20%, 100% -20%;
 }
 
 .photo-list {
@@ -379,30 +363,20 @@ img {
   opacity: 0;
 }
 
-#gallery .bg-tl {
-  top: -174px;
+/* ----------------------  Footer  ----------------------  */
+.footer .container {
+  background-image: url(../image/bottom-left.svg),
+    url(../image/bottom-right.svg);
+  background-repeat: no-repeat;
+  background-position: -10% 18%, 110% 18%;
 }
 
-#gallery .bg-tr {
-  top: -174px;
-}
-/* ----------------------  Footer  ----------------------  */
 .footer-border {
+  width: 526px;
   margin-left: auto;
   margin-right: auto;
-  width: 1362px;
   border-bottom: 1px solid var(--shadow-card);
   text-align: center;
-}
-
-.footer .bg-bl {
-  bottom: -313px;
-  left: -137px;
-}
-
-.footer .bg-br {
-  bottom: -313px;
-  right: -140px;
 }
 
 .footer .container {
@@ -414,7 +388,7 @@ img {
   width: 50px;
   margin: 0 auto;
 }
-.footer .container > p {
+.footer-text {
   font-size: 25px;
   line-height: 1.506;
   text-align: center;
