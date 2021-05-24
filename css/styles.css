@@ -290,18 +290,8 @@ img {
 .service-list .item:hover,
 .service-list .item:focus {
   background-color: var(--shadow-card);
-  box-shadow: 0 19px 94px var(--acent-color);
-}
-
-.service-list .item:hover .title-card,
-.service-list .item:focus .title-card {
+  box-shadow: 30px 30px 100px var(--acent-color);
   color: var(--bg-color);
-}
-
-.service-list .item:hover p,
-.service-list .item:focus p {
-  color: var(--bg-color);
-  opacity: 0.65;
 }
 
 .title-card {
