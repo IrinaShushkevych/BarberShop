@@ -2,7 +2,7 @@
   --acent-color: #a3c1ef;
   --text-color: #153461;
   --text-color: rgba(22, 53, 97, 1);
-  --acent-text_color: #fbb400;
+  --acent-text-color: #fbb400;
   --bg-color: #ffffff;
   --bg_card: #fafbff;
   --shadow-card: #99baed;
@@ -14,7 +14,6 @@
 
 body {
   font-family: 'Catamaran', sans-serif;
-  /* font-size: 25px;  */
   font-size: 15px;
   font-weight: 500;
   line-height: 1.5;
@@ -32,7 +31,7 @@ body {
   padding: 0;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
@@ -46,7 +45,14 @@ img {
 }
 
 .text-accent {
-  color: var(--acent-text_color);
+  color: var(--acent-text-color);
+}
+
+.text {
+  font-size: 25px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
+  opacity: 0.65;
 }
 
 .title {
@@ -78,11 +84,6 @@ img {
   transition: all 0.5s ease-out;
 }
 
-.pos-rel {
-  position: relative;
-  overflow: hidden;
-}
-
 /* ----------------------  Header  ----------------------  */
 
 .header .container {
@@ -97,12 +98,10 @@ img {
   display: flex;
 }
 
-.logo-container {
-  margin-right: 110px;
-}
-
 .logo-text {
+  margin-right: 110px;
   margin-bottom: 0;
+  margin-top: 0;
   position: relative;
 
   font-weight: 600;
@@ -133,7 +132,7 @@ img {
   font-size: 25px;
   line-height: 1.336;
   border-radius: 5px;
-  transition: all 0.5s ease-out; /* декорирование */
+  transition: all 0.5s ease-out;
 }
 
 .menu a:hover,
@@ -168,12 +167,13 @@ img {
   font-size: 20px;
   line-height: 1.506;
   letter-spacing: 0.03em;
+
+  transition: all 0.5s ease-out;
 }
 
 .appointment:hover,
 .appointment:focus {
   box-shadow: 0 10px 50px var(--acent-color);
-  transition: all 0.5s ease-out;
 }
 
 .user-button {
@@ -182,11 +182,9 @@ img {
 }
 /* ----------------------  Home  ----------------------  */
 
-#home {
-  display: flex;
+.home .container {
   padding-top: 82px;
   padding-left: 188px;
-  padding-right: 0;
   padding-bottom: 153px;
   padding-right: 1156px;
   background-image: url(../image/bg-home.svg);
@@ -194,7 +192,7 @@ img {
   background-position-x: 100%;
 }
 
-.home-content .title {
+.home .title {
   margin-bottom: 29px;
   font-weight: 700;
   font-size: 75px;
@@ -202,17 +200,14 @@ img {
   letter-spacing: 0;
 }
 
-.home-content p {
+.home .text {
   margin-top: 0;
   margin-bottom: 97px;
-  font-size: 25px;
-  line-height: 1.506;
-  letter-spacing: 0.03em;
 }
+
 /* ----------------------  History  ----------------------  */
 
-#history {
-  display: flex;
+.history .container {
   padding-right: 195px;
   padding-left: 1199px;
   padding-top: 337px;
@@ -223,49 +218,30 @@ img {
   background-position: -1% -20%, 100% -20%, 70px 100%;
 }
 
-.history-content .title {
+.history .title {
   margin-bottom: 80px;
 }
-.history-content p:not(:last-child) {
+.history .text:not(:last-child) {
   margin-bottom: 48px;
 }
-.history-content p:last-child {
+.history .text:last-child {
   margin-bottom: 108px;
 }
 
 /* ----------------------  Service  ----------------------  */
-#service {
+.service .container {
   text-align: center;
   padding-top: 110px;
   padding-bottom: 239px;
   background-image: url(../image/bottom-right.svg),
     url(../image/bottom-left.svg);
   background-repeat: no-repeat;
-  background-position: 110% 150%, -10% 150%;
+  background-position: 110% 131%, -10% 131%;
 }
 
 .service-list {
   display: flex;
   justify-content: center;
-}
-
-.service-list img {
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.service-list .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 103px;
-  height: 126px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: var(--bg-card);
-  box-shadow: 0px 1px 0px var(--card-shadow);
-  border-radius: 13px;
 }
 
 .service-list .item {
@@ -294,6 +270,20 @@ img {
   color: var(--bg-color);
 }
 
+.service-list .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 126px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--bg-card);
+  box-shadow: 0px 1px 0px var(--card-shadow);
+  border-radius: 13px;
+}
+
 .title-card {
   font-weight: 700;
   font-size: 45px;
@@ -302,16 +292,8 @@ img {
   margin-bottom: 60px;
 }
 
-.service-list p {
-  font-size: 25px;
-  line-height: 1.506;
-  text-align: center;
-  letter-spacing: 0.03em;
-  opacity: 0.65;
-}
-
 /* ----------------------  Gallery  ----------------------  */
-#gallery {
+.gallery .container {
   padding-top: 0;
   padding-bottom: 136px;
   padding-left: 270px;
@@ -355,6 +337,9 @@ img {
 
 /* ----------------------  Footer  ----------------------  */
 .footer .container {
+  text-align: center;
+  padding-bottom: 98px;
+  overflow: visible;
   background-image: url(../image/bottom-left.svg),
     url(../image/bottom-right.svg);
   background-repeat: no-repeat;
@@ -369,21 +354,9 @@ img {
   text-align: center;
 }
 
-.footer .container {
-  text-align: center;
-  padding-bottom: 98px;
-}
-
-.footer .logo-container {
+.footer .logo-text {
   width: 50px;
   margin: 0 auto;
-}
-.footer-text {
-  font-size: 25px;
-  line-height: 1.506;
-  text-align: center;
-  letter-spacing: 0.03em;
-  opacity: 0.65;
 }
 
 .social {
